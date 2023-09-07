@@ -1,0 +1,67 @@
+.box{
+    border-radius: 5px;
+    padding: 10px 20px ;
+    background-color: white;
+    box-shadow: 0px 0px 5px 5px rgba(0, 0, 100, 0.3);
+    text-align: center;
+    width: 300px;
+    
+
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: linear-gradient(120deg,blue,pink,white);
+}
+.box #author{
+    text-align: end;
+}
+.box #author::before{
+    content: '---';
+   
+}
+#quote::before,#quote::after{
+    content: '"';
+}
+#quote{
+    font-weight: bolder;
+}
+
+.buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    
+}
+.buttons #generate{
+    padding: 5px;
+    border-radius: 30px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 15px;
+    background: rgb(79, 108, 254);
+    color: white;
+    width: 100px;
+}
+.buttons #tweet{
+    padding: 10px;
+    border-radius: 30px;
+    border: 2px solid blue;
+    outline: none;
+    cursor: pointer;
+    font-size: 15px;
+    background: white;
+    color: black;
+    width: 100px;
+}
+.buttons #tweet img{
+    width: 15px;
+    position: relative;
+    top: 3px;
+    right: 3px;
+}
